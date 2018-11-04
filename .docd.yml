@@ -1,6 +1,8 @@
 version: '1.0'
 pipeline:
   build:
+    dockerfile: 'Dockerfile'
   push:
+    registry: 'docker.io'
   deploy:
     stack: 'test'
